@@ -42,6 +42,39 @@ a:focus {
   color: #000000;
 }
 
+.container {
+  display: flex;
+  background-color: tomato;
+  align-items: center;
+  width: 1600px;
+  height: 80px;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul[class],
+li {
+  margin: 0;
+}
+a.style-color-web-studio {
+  justify-content: flex-start;
+  margin-left: 215px;
+  padding-bottom: 25px;
+}
+.container-nav {
+  margin-left: 93px;
+  padding-bottom: 32px;
+}
+
+.container-link-color {
+  display: flex;
+}
+a.nav-contact-color {
+  margin-left: 331px;
+}
 .nav {
   font-weight: 500;
   font-size: 14px;
@@ -197,4 +230,34 @@ a:focus {
   letter-spacing: 0.02em;
   color: #212121;
 }
-/* ------- БЛОЧНЫЕ ЭЛЕМЕНТЫ ------ */
+.container {
+  display: flex;
+  background-color: tomato;
+  align-items: center;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul[class],
+li {
+  margin: 0;
+}
+a.style-color-web-studio {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 215px;
+  padding-bottom: 25px;
+}
+.container-nav {
+  display: flex;
+  margin-left: 93px;
+  padding-bottom: 32px;
+  flex-direction: row;
+}
+a.nav-contact-color {
+  display: flex;
+  margin-left: 331px;
+}
