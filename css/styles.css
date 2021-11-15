@@ -1,3 +1,17 @@
+/* Глобальный сброс стилей*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 :root {
   --active-link-color: #2196f3;
   --primary-text-color: #212121;
@@ -21,7 +35,6 @@ a:active {
 a:hover {
   color: var(--active-link-color);
 }
-
 button:hover {
   background-color: #2196f3;
   color: var(--thirdery-text-color);
@@ -38,43 +51,96 @@ a:focus {
   color: var(--active-link-color);
 }
 
+body {
+  width: 1600px;
+}
+/* Контейнер*/
+.container {
+  width: 1200px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Секции*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Коробка хедера*/
+.box-header {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Коробка лого*/
+.logo-box {
+  margin: 25px 0px 24px 0px;
+}
+/* Коробка навигации*/
+.nav-box {
+  margin: 32px 0px 32px 93px;
+}
+.hr {
+  display: inline;
+}
+
+.hr-box-l {
+  margin-right: 50px;
+}
+/* Коробка почты и телефона*/
+.tel-box {
+  margin: 32px 0px 32px 321px;
+  display: flex;
+  justify-content: flex-start;
+}
+.style-color-web-studio {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--active-link-color);
+}
 .studio-color {
   color: #000000;
 }
-
-.container {
-  display: flex;
-  background-color: tomato;
-  align-items: center;
-  width: 1600px;
-  height: 80px;
+.studio-color-footer {
+  color: var(--thirdery-text-color);
+}
+.footer {
+  background-color: var(--footer-b-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.text-footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  display: inline-block;
+}
+.text-footer-map {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--thirdery-text-color);
 }
 
-body,
-h1,
-h2,
-h3,
-p,
-ul[class],
-li {
-  margin: 0;
-}
-a.style-color-web-studio {
-  justify-content: flex-start;
-  margin-left: 215px;
-  padding-bottom: 25px;
-}
-.container-nav {
-  margin-left: 93px;
-  padding-bottom: 32px;
+.web-footer-position {
+  margin-bottom: 20px;
 }
 
-.container-link-color {
-  display: flex;
-}
-a.nav-contact-color {
-  margin-left: 331px;
-}
 .nav {
   font-weight: 500;
   font-size: 14px;
@@ -82,14 +148,23 @@ a.nav-contact-color {
   letter-spacing: 0.02em;
 }
 
-.nav-contact-color {
+.contact-color {
   color: var(--secondary-text-color);
 }
 
-.heat-box {
+.heat-bg {
   background-color: var(--footer-b-color);
 }
 
+.heat-position {
+  padding: 200px 252px 200px 252px;
+}
+
+.heat-button-position {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 .heat-text {
   font-weight: 900;
   font-size: 44px;
@@ -98,6 +173,24 @@ a.nav-contact-color {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--thirdery-text-color);
+}
+
+.card-item {
+  margin: none;
+  padding: none;
+  list-style: none;
+  display: flex;
+  margin-left: -30px;
+}
+
+.card-item > .item-position {
+  flex-basis: calc(100% / 4-30px);
+  margin-left: 30px;
+}
+
+.card-padding {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .detail-title {
@@ -115,17 +208,31 @@ a.nav-contact-color {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-top: 10px;
 }
 
-.w-w-doing {
+.studio-image {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
+.studio-image-card {
+  margin: none;
+  padding: none;
+  list-style: none;
+  display: flex;
+  margin-left: -30px;
+}
+
+.studio-image-card-item {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+}
 .our-team {
   font-weight: 700;
   font-size: 36px;
@@ -133,6 +240,7 @@ a.nav-contact-color {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
 .our-team-title {
@@ -142,6 +250,7 @@ a.nav-contact-color {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-top: 30px;
 }
 .our-team-text {
   font-weight: 400;
@@ -150,6 +259,24 @@ a.nav-contact-color {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-top: 10px;
+}
+
+.our-team-card {
+  margin: none;
+  padding: none;
+  list-style: none;
+  display: flex;
+  margin-left: -30px;
+}
+
+.our-team-item {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .text-button {
@@ -167,6 +294,7 @@ a.nav-contact-color {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-top: 20px;
 }
 .project-text {
   font-weight: 400;
@@ -174,12 +302,15 @@ a.nav-contact-color {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-top: 4px;
 }
 .cursor {
   cursor: pointer;
 }
 
 .big-button {
+  width: 200px;
+  height: 50px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -188,76 +319,33 @@ a.nav-contact-color {
   letter-spacing: 0.06em;
   color: var(--thirdery-text-color);
   background-color: var(--active-link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
-.footer {
-  background-color: var(--footer-b-color);
-}
-.style-color-web-studio {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--active-link-color);
-}
-.studio-color-footer {
-  color: var(--thirdery-text-color);
-}
-.text-footer-map {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--thirdery-text-color);
-}
-.text-footer {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.link-color {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-.container {
+.portfolio-button-card {
   display: flex;
-  background-color: tomato;
-  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+}
+.portfolio-button-item {
+  margin-left: 8px;
 }
 
-body,
-h1,
-h2,
-h3,
-p,
-ul[class],
-li {
-  margin: 0;
-}
-a.style-color-web-studio {
+.portfolio-card {
+  margin: none;
+  padding: none;
+  list-style: none;
   display: flex;
-  justify-content: flex-start;
-  margin-left: 215px;
-  padding-bottom: 25px;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-.container-nav {
-  display: flex;
-  margin-left: 93px;
-  padding-bottom: 32px;
-  flex-direction: row;
-}
-a.nav-contact-color {
-  display: flex;
-  margin-left: 331px;
+
+.portfolio-card > .portfolio-item {
+  flex-basis: calc(100% / 9);
+  margin-left: 30px;
+  margin-top: 30px;
 }
