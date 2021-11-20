@@ -26,10 +26,10 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="header-line">
       <!--Web Studio-->
       <div class="container">
-        <div class="box-header">
+        <div class="top-header">
           <!--Коробка лого-->
           <div class="logo-box">
             <a class="style-color-web-studio" href="">
@@ -41,10 +41,10 @@
             <!--Панель навигации-->
             <nav class="nav">
               <ul>
-                <li class="hr hr-box-l">
+                <li class="hr hr-mrg-l">
                   <a class="link-color" href="index.html">Студия</a>
                 </li>
-                <li class="hr hr-box-l">
+                <li class="hr hr-mrg-l">
                   <a class="link-color" href="portfolio.html">Портфолио</a>
                 </li>
                 <li class="hr">
@@ -57,7 +57,7 @@
           <div class="tel-box">
             <!--Панель адрес и телефон-->
             <ul class="nav">
-              <li class="hr hr-box-l">
+              <li class="hr hr-mrg-l">
                 <a class="contact-color" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
@@ -86,8 +86,8 @@
             </div>
           </div>
         </div>
-        <section class="section container">
-          <div class="card-padding">
+        <section class="section">
+          <div class="container">
             <ul class="card-item">
               <!-- <li>Внимание к деталям</li> -->
               <li class="item-position">
@@ -122,11 +122,11 @@
           </div>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="section container">
-          <div class="card-padding">
-            <h2 class="studio-image">Чем мы занимаемся</h2>
-            <ul class="studio-image-card">
-              <li class="studio-image-card-item">
+        <section class="section-pad-bot">
+          <div class="container">
+            <h2 class="w-w-doing">Чем мы занимаемся</h2>
+            <ul class="w-w-doing-card">
+              <li class="w-w-doing-card-item">
                 <img
                   src="images/pct1.jpg"
                   width="370"
@@ -134,7 +134,7 @@
                   alt="Картинка 1"
                 />
               </li>
-              <li class="studio-image-card-item">
+              <li class="w-w-doing-card-item">
                 <img
                   src="images/pct2.jpg"
                   width="370"
@@ -142,7 +142,7 @@
                   alt="Картинка 2"
                 />
               </li>
-              <li class="studio-image-card-item">
+              <li class="w-w-doing-card-item">
                 <img
                   src="images/pct3.jpg"
                   width="370"
@@ -154,8 +154,8 @@
           </div>
         </section>
         <!--Наша команда-->
-        <section class="section container">
-          <div class="card-padding">
+        <section class="section">
+          <div class="container">
             <h2 class="our-team">Наша команда</h2>
             <!--Team cards-->
             <ul class="our-team-card">
@@ -215,35 +215,33 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="card-padding">
-          <div class="web-footer-position">
-            <a class="style-color-web-studio" href="">
-              Web<span class="studio-color-footer">Studio</span>
-            </a>
-          </div>
-          <address>
-            <ul>
-              <li>
-                <a
-                  class="text-footer-map"
-                  href="https://goo.gl/maps/CRWfaXV7XRGESjdQ7"
-                >
-                  г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li>
-                <a class="text-footer" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a class="text-footer" href="tel:+380961111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
+        <div class="web-footer-position">
+          <a class="style-color-web-studio" href="">
+            Web<span class="studio-color-footer">Studio</span>
+          </a>
         </div>
+        <address>
+          <ul>
+            <li>
+              <a
+                class="text-footer-map"
+                href="https://goo.gl/maps/CRWfaXV7XRGESjdQ7"
+              >
+                г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a class="text-footer" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="text-footer" href="tel:+380961111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>

@@ -51,8 +51,10 @@ a:focus {
   color: var(--active-link-color);
 }
 
-body {
-  width: 1600px;
+.header-line {
+  border-bottom: 1px solid #ececec;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Контейнер*/
 .container {
@@ -60,6 +62,7 @@ body {
   background-color: transparent;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 15px 0px 15px;
 }
 
 /* Секции*/
@@ -67,12 +70,13 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section-pad-bot {
+  padding-bottom: 94px;
+}
 /* Коробка хедера*/
-.box-header {
+.top-header {
   display: flex;
   justify-content: flex-start;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Коробка лого*/
@@ -87,7 +91,7 @@ body {
   display: inline;
 }
 
-.hr-box-l {
+.hr-mrg-l {
   margin-right: 50px;
 }
 /* Коробка почты и телефона*/
@@ -184,13 +188,8 @@ body {
 }
 
 .card-item > .item-position {
-  flex-basis: calc(100% / 4-30px);
+  flex-basis: 270px;
   margin-left: 30px;
-}
-
-.card-padding {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .detail-title {
@@ -211,7 +210,7 @@ body {
   margin-top: 10px;
 }
 
-.studio-image {
+.w-w-doing {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -221,7 +220,7 @@ body {
   margin-bottom: 50px;
 }
 
-.studio-image-card {
+.w-w-doing-card {
   margin: none;
   padding: none;
   list-style: none;
@@ -229,7 +228,7 @@ body {
   margin-left: -30px;
 }
 
-.studio-image-card-item {
+.w-w-doing-card-item {
   flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
 }
@@ -294,7 +293,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
 }
 .project-text {
   font-weight: 400;
@@ -328,10 +326,13 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-button-item {
   margin-left: 8px;
+}
+.pad-button {
+  padding: 6px 22px;
 }
 
 .portfolio-card {
@@ -348,4 +349,9 @@ body {
   flex-basis: calc(100% / 9);
   margin-left: 30px;
   margin-top: 30px;
+  outline: 1px solid #eeeeee;
+}
+
+.portfolio-text-title {
+  padding: 20px 24px 20px 24px;
 }

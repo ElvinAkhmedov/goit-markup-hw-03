@@ -26,9 +26,9 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="header-line">
       <div class="container">
-        <div class="box-header">
+        <div class="top-header">
           <!--Коробка лого-->
           <div class="logo-box">
             <a class="style-color-web-studio" href="">
@@ -40,10 +40,10 @@
             <!--Панель навигации-->
             <nav class="nav">
               <ul>
-                <li class="hr hrbox-l">
+                <li class="hr hr-mrg-l">
                   <a class="link-color" href="index.html">Студия</a>
                 </li>
-                <li class="hr hr-box-l">
+                <li class="hr hr-mrg-l">
                   <a class="link-color" href="portfolio.html">Портфолио</a>
                 </li>
                 <li class="hr">
@@ -56,7 +56,7 @@
           <div class="tel-box">
             <!--Панель адрес и телефон-->
             <ul class="nav">
-              <li class="hr hr-box-l">
+              <li class="hr hr-mrg-l">
                 <a class="contact-color" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
@@ -78,30 +78,34 @@
           <ul class="portfolio-button-card">
             <!--Кнопки портфолио (filters)-->
             <li class="portfolio-button-item">
-              <button class="text-button cursor" type="button">Все</button>
+              <button class="text-button cursor pad-button" type="button">
+                Все
+              </button>
             </li>
             <li class="portfolio-button-item">
-              <button class="text-button cursor" type="button">
+              <button class="text-button cursor pad-button" type="button">
                 Веб-сайты
               </button>
             </li>
             <li class="portfolio-button-item">
-              <button class="text-button cursor" type="button">
+              <button class="text-button cursor pad-button" type="button">
                 Приложения
               </button>
             </li>
             <li class="portfolio-button-item">
-              <button class="text-button cursor" type="button">Дизайн</button>
+              <button class="text-button cursor pad-button" type="button">
+                Дизайн
+              </button>
             </li>
             <li class="portfolio-button-item">
-              <button class="text-button cursor" type="button">
+              <button class="text-button cursor pad-button" type="button">
                 Маркетинг
               </button>
             </li>
           </ul>
 
           <!--Картинки портфолио-->
-          <ul class="portfolio-card card-padding">
+          <ul class="portfolio-card">
             <!--Картинки портфолио-->
             <li class="portfolio-item">
               <img
@@ -110,8 +114,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Технокряк</h3>
-              <p class="project-text">Веб-сайт</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Технокряк</h3>
+                <p class="project-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -120,8 +126,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
-              <p class="project-text">Дизайн</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
+                <p class="project-text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -130,8 +138,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Ресторан Seafood</h3>
-              <p class="project-text">Приложение</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Ресторан Seafood</h3>
+                <p class="project-text">Приложение</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -140,8 +150,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Проект Prime</h3>
-              <p class="project-text">Маркетинг</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Проект Prime</h3>
+                <p class="project-text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -150,8 +162,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Проект Boxes</h3>
-              <p class="project-text">Приложение</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Проект Boxes</h3>
+                <p class="project-text">Приложение</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -160,8 +174,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Inspiration has no Borders</h3>
-              <p class="project-text">Веб-сайт</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Inspiration has no Borders</h3>
+                <p class="project-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -170,8 +186,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Издание Limited Edition</h3>
-              <p class="project-text">Дизайн</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Издание Limited Edition</h3>
+                <p class="project-text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -180,8 +198,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Проект LAB</h3>
-              <p class="project-text">Маркетинг</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Проект LAB</h3>
+                <p class="project-text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -190,8 +210,10 @@
                 height="294"
                 alt="Картинка 1"
               />
-              <h3 class="project-title">Growing Business</h3>
-              <p class="project-text">Приложение</p>
+              <div class="portfolio-text-title">
+                <h3 class="project-title">Growing Business</h3>
+                <p class="project-text">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
