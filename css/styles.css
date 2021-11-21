@@ -78,7 +78,8 @@ a:focus {
 /* Коробка хедера*/
 .top-header {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  
 }
 
 
@@ -96,14 +97,15 @@ a:focus {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--active-link-color);
-  margin-bottom: 30px;
-
+  margin-right: 93px;
+  
 }
 .studio-color {
   color: #000000;
 }
 .studio-color-footer {
   color: var(--thirdery-text-color);
+  margin-bottom: 20px;
 }
 .footer {
   background-color: var(--footer-b-color);
@@ -138,6 +140,11 @@ a:focus {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  
+}
+.contact-list-nav{
+  display: flex;
   margin-left: auto;
 }
 
@@ -177,7 +184,8 @@ a:focus {
  
 }
 
-.card-item > .item-position :not(:last-child):margin-right {
+.item-position :not(:last-child):{
+  margin-right 30px; 
   flex-basis: 270px;
   margin-left: 30px;
 }
@@ -228,6 +236,7 @@ a:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
  
 }
 
@@ -355,10 +364,18 @@ margin-right ;
   background-color: var(--thirdery-text-color);
 }
 .team{
-  padding-top: 186px;
-  padding-bottom: 94px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .adress:not(:last-child) {
-  margin-bottom:  60px;
+  margin-bottom:  10px;
+
+}
+.team-box{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.w-w-doing-card-ite-1:not(:last-child):{
+  margin-right: auto;
 
 }
